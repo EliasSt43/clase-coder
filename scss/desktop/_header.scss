@@ -1,0 +1,26 @@
+header{
+    background: $black;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    grid-template-areas: 
+    "logo tienda";
+
+    nav{
+        ul{
+            li{
+                a{
+                    font-size: 3rem;
+                    font-weight: bold;
+                } 
+            } 
+        } 
+    }
+    
+    #logo{
+        z-index: 1;
+        grid-area: logo;
+        width: 30%;
+        justify-self: center;
+    }
+}

@@ -1,0 +1,362 @@
+/*===== VARIABLES =====*/
+/*===== ========= =====*/
+body {
+  font-family: 'Poppins', sans-serif;
+  margin-top: 1rem;
+  margin: 0;
+  background-color: black;
+  position: relative; }
+  body header {
+    background: black;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    grid-template-areas: "logo tienda "; }
+    body header nav ul li a {
+      font-size: 2rem;
+      font-weight: bold; }
+    body header .icono {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: #fff; }
+    body header #logo {
+      grid-area: logo;
+      width: 90%;
+      justify-self: center; }
+  body #tittle {
+    width: 100%;
+    height: 200px;
+    background-image: url("../public/img/fondo2.jpg");
+    background-repeat: no-repeat;
+    background-size: 38rem;
+    background-position: center;
+    border-bottom: solid 3px #16ff00;
+    border-top: solid 3px #16ff00;
+    display: flex; }
+    body #tittle .sub {
+      z-index: 1;
+      width: 250px;
+      height: 140px;
+      padding: 10px;
+      font-size: 1rem;
+      text-align: center;
+      color: white;
+      background-color: black;
+      margin-top: 30px;
+      margin-left: 7.3rem;
+      border-bottom: solid #16ff00;
+      border-right: solid #16ff00;
+      border-end-end-radius: 5px;
+      box-shadow: 5px 5px 30px #16ff00; }
+  body section .style-3 {
+    margin: 15px;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    background-color: black;
+    border-bottom: solid #16ff00;
+    border-right: solid #16ff00;
+    box-shadow: 5px 5px 5px #16ff00;
+    border-end-end-radius: 10px;
+    width: 250px;
+    padding: 10px; }
+  body section #cont-img {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    body section #cont-img .imgSection-1 {
+      width: 15rem;
+      margin-bottom: 10px;
+      box-shadow: 5px 5px 5px #16ff00;
+      border: solid #16ff00;
+      border-end-end-radius: 5px; }
+  body #contenido {
+    display: flex;
+    flex-direction: row;
+    justify-content: center; }
+    body #contenido .style-4 {
+      margin-top: 2rem;
+      margin-bottom: 2rem;
+      color: white;
+      text-align: center;
+      font-size: 1.3rem;
+      font-weight: bold;
+      border: solid #16ff00;
+      width: 70%;
+      padding: 10px; }
+    body #contenido .style-5 {
+      margin-top: 2rem;
+      margin-bottom: 2rem;
+      color: white;
+      text-align: center;
+      font-size: 1.3rem;
+      font-weight: bold;
+      border: solid #16ff00;
+      width: 70%; }
+  body footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    body footer .style-2 {
+      position: relative;
+      width: 300px;
+      height: 300px;
+      display: inline-block;
+      text-align: center; }
+      body footer .style-2 .container {
+        color: white; }
+      body footer .style-2 .style {
+        color: white;
+        font-size: 1.5rem;
+        font-weight: bold;
+        text-align: center; }
+    body footer .class {
+      border-bottom: solid 3px white;
+      margin-bottom: 10px; }
+    body footer .class2 {
+      display: inline-block;
+      border-top: solid 3px white;
+      margin-top: 10px; }
+  @media screen and (min-width: 600px) {
+    body header {
+      background: black;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      align-items: center;
+      grid-template-areas: "logo tienda"; }
+      body header nav ul li a {
+        font-size: 2.5rem;
+        font-weight: bold; }
+      body header .icono {
+        font-size: 2rem;
+        font-weight: bold;
+        color: #fff; }
+      body header #logo {
+        grid-area: logo;
+        width: 60%;
+        justify-self: center; }
+    body #tittle {
+      width: 100%;
+      height: 400px;
+      background-image: url("../public/img/fondo2.jpg");
+      background-repeat: no-repeat;
+      background-size: 70rem;
+      background-position: center;
+      border-bottom: solid 3px #16ff00;
+      border-top: solid 3px #16ff00;
+      display: flex; }
+      body #tittle .sub {
+        z-index: 1;
+        width: 420px;
+        height: 180px;
+        padding: 5px;
+        color: white;
+        background-color: black;
+        margin-top: 100px;
+        margin-left: 20rem;
+        border-bottom: solid #16ff00;
+        border-right: solid #16ff00;
+        border-end-end-radius: 5px;
+        box-shadow: 5px 5px 30px #16ff00; }
+        body #tittle .sub h1 {
+          font-size: 3rem;
+          font-weight: bold; }
+        body #tittle .sub .sub-two {
+          font-size: 1.5rem;
+          font-weight: bold; }
+    body section .style-3 {
+      margin: 20px;
+      color: white;
+      font-size: 1.5rem;
+      font-weight: bold;
+      background-color: black;
+      border-right: solid #16ff00;
+      border-bottom: solid #16ff00;
+      box-shadow: 5px 5px 5px #16ff00;
+      border-end-end-radius: 10px;
+      width: 380px;
+      padding: 10px; }
+    body section #cont-img {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(3, 1fr);
+      justify-items: center; }
+      body section #cont-img .imgSection-1 {
+        width: 15rem;
+        margin-bottom: 10px;
+        box-shadow: 5px 5px 5px #16ff00;
+        border: solid #16ff00;
+        border-end-end-radius: 5px; }
+    body #contenido {
+      display: flex;
+      flex-direction: row;
+      justify-content: center; }
+      body #contenido .style-4 {
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        color: white;
+        text-align: center;
+        font-size: 1.5rem;
+        font-weight: bold;
+        border: solid #16ff00;
+        width: 80%;
+        padding: 10px; }
+      body #contenido .style-5 {
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        color: white;
+        text-align: center;
+        font-size: 1.5rem;
+        font-weight: bold;
+        border: solid #16ff00;
+        width: 50%; }
+    body footer {
+      margin-top: 10px;
+      display: flex;
+      flex-direction: row;
+      justify-content: center; }
+      body footer .style-2 {
+        position: relative;
+        width: 300px;
+        height: 300px;
+        display: inline-block;
+        text-align: center;
+        margin-left: 30px; }
+        body footer .style-2 .container {
+          color: white;
+          margin-left: 10px; }
+        body footer .style-2 .style {
+          color: white;
+          font-size: 1.5rem;
+          font-weight: bold; }
+      body footer .class {
+        border-bottom: none;
+        border-right: solid 3px white;
+        padding: 10px; }
+      body footer .class2 {
+        border-top: none;
+        border-left: solid 3px white;
+        padding: 10px; } }
+  @media screen and (min-width: 1024px) {
+    body header {
+      background: black;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      align-items: center;
+      grid-template-areas: "logo tienda"; }
+      body header nav ul li a {
+        font-size: 3rem;
+        font-weight: bold; }
+      body header #logo {
+        z-index: 1;
+        grid-area: logo;
+        width: 30%;
+        justify-self: center; }
+    body #tittle {
+      width: 100%;
+      height: 600px;
+      background-image: url("../public/img/fondo2.jpg");
+      background-repeat: no-repeat;
+      background-size: 100%;
+      background-position: center;
+      border-bottom: solid 3px #16ff00;
+      border-top: solid 3px #16ff00;
+      display: flex; }
+      body #tittle .sub {
+        z-index: 1;
+        width: 570px;
+        height: 230px;
+        padding: 10px;
+        color: white;
+        background-color: black;
+        margin-top: 140px;
+        margin-left: 65rem;
+        border-bottom: solid #16ff00;
+        border-right: solid #16ff00;
+        border-end-end-radius: 10px;
+        box-shadow: 5px 5px 20px #16ff00; }
+        body #tittle .sub h1 {
+          font-size: 3.5rem;
+          font-weight: bold; }
+        body #tittle .sub .sub-two {
+          font-size: 2rem;
+          font-weight: bold; }
+    body section .style-3 {
+      margin: 40px;
+      color: white;
+      font-size: 1.5rem;
+      font-weight: bold;
+      border-bottom: solid #16ff00;
+      border-right: solid #16ff00;
+      box-shadow: 5px 5px 5px #16ff00;
+      border-end-end-radius: 10px;
+      width: 380px;
+      padding: 10px; }
+    body section #cont-img {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+      justify-items: center; }
+      body section #cont-img .contenedor {
+        margin-bottom: 20px;
+        width: 350px;
+        height: 350px;
+        border-radius: 5px;
+        border: solid #16ff00;
+        filter: drop-shadow(5px 5px 5px #16ff00); }
+        body section #cont-img .contenedor .imgSection-1 {
+          border: none;
+          width: 100%;
+          height: 100%; }
+    body #contenido {
+      display: flex;
+      flex-direction: row;
+      justify-content: center; }
+      body #contenido .style-4 {
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        color: white;
+        text-align: center;
+        font-size: 2rem;
+        font-weight: bold;
+        border: solid #16ff00;
+        width: 80%;
+        padding: 10px; }
+      body #contenido .style-5 {
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        color: white;
+        text-align: center;
+        font-size: 2rem;
+        font-weight: bold;
+        border: solid #16ff00;
+        width: 50%; }
+    body footer {
+      margin-top: 10px;
+      margin-bottom: 30px;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      height: 300px; }
+      body footer .style-2 {
+        position: relative;
+        width: 300px;
+        height: 270px;
+        display: inline-block;
+        text-align: center;
+        margin-left: 30px; }
+        body footer .style-2 .container {
+          color: white;
+          margin-left: 10px; }
+        body footer .style-2 .style {
+          color: white;
+          font-size: 1.5rem;
+          font-weight: bold; }
+      body footer .class {
+        border-right: solid 3px white;
+        padding: 10px; }
+      body footer .class2 {
+        border-left: solid 3px white;
+        padding: 10px; } }

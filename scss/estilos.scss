@@ -1,0 +1,30 @@
+/*===== VARIABLES =====*/
+$green: rgba(22,255,0,1);
+$black: black;
+/*===== ========= =====*/
+
+body{
+    font-family:'Poppins', sans-serif;
+    margin-top: 1rem;
+    margin: 0;
+    background-color: $black;
+    position: relative;
+
+    @import "phone/header";
+    @import "phone/main";
+    @import "phone/footer";
+
+    @media screen and (min-width:600px) {
+        
+        @import "tablet/header";
+        @import "tablet/main";
+        @import "tablet/footer";
+    }
+
+    @media screen and (min-width:1024px) {
+    
+        @import "desktop/header";
+        @import "desktop/main";
+        @import "desktop/footer";
+    }
+}

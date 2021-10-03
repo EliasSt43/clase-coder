@@ -1,0 +1,33 @@
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .style-2{
+        position: relative; width: 300px; height: 300px;
+        display: inline-block;
+        text-align: center;
+
+        .container{
+            color: white;
+        }
+        
+        .style{
+            color: white;
+            font-size: 1.5rem;
+            font-weight: bold;
+            text-align: center;
+        }
+        
+    }
+    .class{
+        border-bottom: solid 3px white;
+        margin-bottom: 10px;
+    }
+    .class2{
+        display: inline-block;
+        
+        border-top: solid 3px white;
+        margin-top: 10px;
+    }
+}
