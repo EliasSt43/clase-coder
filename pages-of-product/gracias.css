@@ -1,0 +1,87 @@
+body {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    background: #000;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+.container{
+    display: flex;
+    height: 50vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.saludo{
+    display: inline-block;  
+}
+.gracias{
+    display: block;
+    font-size: 2.5rem;
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+}
+
+p{
+    font-size: 1rem;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    color: #fff;
+}
+.redes-container{
+    display: flex;
+    height: 4.5rem;
+    align-items: flex-end;
+    justify-content: end;
+    margin-right: 70px;
+    margin-bottom: 20px;
+}
+    ul:hover > a{
+        filter: blur(2px);
+      }
+
+      li{
+        display: inline-block;
+        margin: 0 5px;
+        width: 50px;
+        height: 50px;
+        text-align: center;
+      }
+        .facebook:hover{
+          background: #3b5999;
+        }
+        .instagram:hover{
+          background: #e4405f;
+        }
+
+
+        a{
+          display: block;
+          padding: 0 10px;
+          background: #fff;
+          color: #000;
+          line-height: 50px;
+          box-shadow: 0 3px 5px 0px rgba(255, 255, 255, 0.637);
+          transition: .2s;
+        }
+        a:hover{
+            transform: translateY(-3px) scale(1.05);
+            box-shadow: 0 5px 5px 0px rgba(255, 255, 255, 0.637);
+            filter: none;
+        }
+        
+      
+    
+
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }

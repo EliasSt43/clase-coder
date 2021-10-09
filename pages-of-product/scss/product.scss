@@ -1,0 +1,176 @@
+/*===== VARIABLES =====*/
+$green: rgba(22,255,0,1);
+$black: black;
+$facebook: #3b5999;
+$instagram: #e4405f;
+/*===== ========= =====*/
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body{
+    font-family:'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    position: relative;
+
+    &:before {
+        content: '';
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        z-index: -1;
+        background: $black;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+
+        nav{
+            ul{
+                li{
+                    a{
+                        font-size: 1.9rem;
+                        font-weight: bold;
+                    } 
+                } 
+            } 
+        }
+
+        .tittle{
+            margin-top: 1.5rem;
+            text-align:center;
+        }
+
+        h1 {
+            font-weight: bold;
+            color: #fff;
+            margin-bottom: 10px;
+        }
+
+        .tittle-2{
+            margin-top: 1.5rem;
+        }
+
+        h2{
+            font-size: 1.5rem;
+            font-weight: bold;
+            color:#000;
+            margin-bottom: 10px;
+        }
+
+        .container {
+            width: 100%;
+            margin: 3.125rem auto 1 auto;
+          }
+          
+          @media (min-width: 576px) {
+            .container {
+              max-width: 540px;
+            }
+          }
+          
+          @media (min-width: 768px) {
+            .container {
+              max-width: 720px;
+            }
+          }
+
+          form {
+            background: $green;
+            padding: 2.5rem 0.625rem;
+            border-radius: 0.25rem;
+          }
+          
+          @media (min-width: 480px) {
+            form {
+              padding: 2.5rem;
+            }
+          }
+
+          .margen{
+              margin-top: 20px;
+          }
+
+          button {
+            margin: 0;
+            font-family: inherit;
+            font-size: inherit;
+            line-height: inherit;
+            border: none;
+          }
+
+          .submit-button {
+            display: block;
+            width: 100%;
+            padding: 0.75rem;
+            background: $black;
+            color: inherit;
+            border-radius: 2px;
+            cursor: pointer;
+          }
+          .color{
+            color:#fff;
+          }
+
+
+          .redes-container{
+            display: flex;
+            height: 4.5rem;
+            align-items: flex-end;
+            justify-content: end;
+            margin-right: 70px;
+            margin-bottom: 20px;
+
+            ul{
+              &:hover a{
+                filter: blur(2px);
+              }
+
+              li{
+                display: inline-block;
+                margin: 0 5px;
+                width: 50px;
+                height: 50px;
+                text-align: center;
+
+                .facebook:hover{
+                  background: $facebook;
+                }
+                .instagram:hover{
+                  background: $instagram;
+                }
+
+
+                a{
+                  display: block;
+                  padding: 0 10px;
+                  background: #fff;
+                  color: #000;
+                  line-height: 50px;
+                  box-shadow: 0 3px 5px 0px rgba(255, 255, 255, 0.637);
+                  transition: .2s;
+
+                  &:hover{
+                    transform: translateY(-3px) scale(1.05);
+                    box-shadow: 0 5px 5px 0px rgba(255, 255, 255, 0.637);
+                    filter: none;
+                  }
+                }
+              }
+            }
+
+            *{
+              margin: 0;
+              padding: 0;
+              box-sizing: border-box;
+            }
+          }
+
+}
+

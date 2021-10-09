@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- El favicon -->
+    <link rel="icon" href="../public/img/logo.ico">
+
+    <!-- Titulo de la página -->
+    <title>Facturación y Envío</title>
+
+    <!-- link de Bootstrap -->
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.css">
+
+    <!-- La tipografia -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:200i,400&amp;display=swap">
+
+    <!-- Mi archivo css -->
+    <link rel="stylesheet" href="css/productcss.css">
+
+    <!-- iconos -->
+    <script src="https://kit.fontawesome.com/a0d16abc5f.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <!--Comienzo del navegador -->
+        <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                <span class="navbar icono">Tienda</span>
+                  </button>
+               <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel"></h5>
+                    <button type="button" class="btn-close-white text-reset" data-bs-dismiss="offcanvas" aria-label="Close">X</button>
+                  </div>
+                  <div class="offcanvas-body btn-dark"> 
+            <ul class="navbar-nav justify-content-center flex-grow-1">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " aria-current="page" href="../pages/mates.html">Mates</a>
+                </li>
+                 <li class="nav-item">
+                    <a class="nav-link " aria-current="page" href="../pages/termos.html">Termos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link col" aria-current="page" href="../pages/bombillas.html">Bombillas</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link col" aria-current="page" href="../pages/combos.html">Combos</a>
+                    </li>
+                </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <div class="tittle">
+    <h1 id="title">Facturación y Envío</h1>
+    </div>
+    </header>
+    <main class="container">
+        <form>
+            <div class="row">
+                <div class="col">
+                  <input type="text" name="Nombre" class="form-control" placeholder="Nombre" aria-label="Nombre"required>
+                </div>
+                <div class="col">
+                  <input type="text" name="Apellido" class="form-control" placeholder="Apellido" aria-label="Apellido"required>
+                </div>
+              </div>
+              <div class="mb-3 margen">
+                <input type="email" name="Email" class="form-control" id="exampleFormControlInput1" placeholder="Email"required>
+              </div>
+              <select class="form-select" name="País" aria-label="Default select example"required>
+                <option selected>Seleccione un país/región</option>
+                <option value="1">Argentina</option>
+                <option value="2">Bolivia</option>
+                <option value="3">Brasil</option>
+                <option value="4">Colombia</option>
+                <option value="5">Chile</option>
+                <option value="6">Ecuador</option>
+                <option value="7">Perú</option>
+                <option value="8">Venezuela</option>
+              </select>
+              <div class="col margen">
+                <input type="text" name="Dirección de calle" class="form-control" placeholder="Dirección de la calle" aria-label="Dirección de la calle"required>
+              </div>
+              <div class="col margen">
+                <input type="text" name="Localidad" class="form-control" placeholder="Localidad / Ciudad" aria-label="Localidad / Ciudad"required>
+              </div>
+              <div class="col margen">
+                <input type="text" name="Provincia" class="form-control" placeholder="Provincia / Región" aria-label="Provincia / Región"required>
+              </div>
+              <div class="col margen">
+                <input type="text" name="Código postal" class="form-control" placeholder="Código postal" aria-label="Código postal"required>
+              </div>
+              <div class="col margen">
+                <input type="text" name="Teléfono" class="form-control" placeholder="Teléfono" aria-label="Teléfono"required>
+              </div>
+              <div class="tittle-2">
+                <h2 id="title">Descripción de pedido</h2>
+                </div>
+                <div class="mb-3">
+                    <textarea class="form-control" name="Especificaion de producto" id="exampleFormControlTextarea1" rows="3"placeholder="Nota sobre tu pepido, por ejemplo, nota de que producto en específico..."></textarea>
+                  </div>
+                  <div>
+                    <button type='submit' id="submit" class="submit-button color">Enviar</button>
+                  </div>
+        </form>
+    </main>
+    <!-- Redes sociales-->
+    <footer class="redes-container">
+      <ul>
+        <li><a href="https://www.instagram.com/" class="instagram"><i class="fab fa-instagram"></i></a></li>
+        <li><a href="https://www.facebook.com/" class="facebook"><i class="fab fa-facebook"></i></a></li>
+      </ul>
+  </footer>
+</body>
+<script src="../bootstrap/js/bootstrap.js"></script>
+</html>

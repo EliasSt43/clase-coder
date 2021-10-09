@@ -1,0 +1,110 @@
+/*===== VARIABLES =====*/
+/*===== ========= =====*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box; }
+
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  position: relative; }
+  body:before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    background: black;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center; }
+  body nav ul li a {
+    font-size: 1.9rem;
+    font-weight: bold; }
+  body .tittle {
+    margin-top: 1.5rem;
+    text-align: center; }
+  body h1 {
+    font-weight: bold;
+    color: #fff;
+    margin-bottom: 10px; }
+  body .tittle-2 {
+    margin-top: 1.5rem; }
+  body h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #000;
+    margin-bottom: 10px; }
+  body .container {
+    width: 100%;
+    margin: 3.125rem auto 1 auto; }
+  @media (min-width: 576px) {
+    body .container {
+      max-width: 540px; } }
+  @media (min-width: 768px) {
+    body .container {
+      max-width: 720px; } }
+  body form {
+    background: #16ff00;
+    padding: 2.5rem 0.625rem;
+    border-radius: 0.25rem; }
+  @media (min-width: 480px) {
+    body form {
+      padding: 2.5rem; } }
+  body .margen {
+    margin-top: 20px; }
+  body button {
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    border: none; }
+  body .submit-button {
+    display: block;
+    width: 100%;
+    padding: 0.75rem;
+    background: black;
+    color: inherit;
+    border-radius: 2px;
+    cursor: pointer; }
+  body .color {
+    color: #fff; }
+  body .redes-container {
+    display: flex;
+    height: 4.5rem;
+    align-items: flex-end;
+    justify-content: end;
+    margin-right: 70px;
+    margin-bottom: 20px; }
+    body .redes-container ul:hover a {
+      filter: blur(2px); }
+    body .redes-container ul li {
+      display: inline-block;
+      margin: 0 5px;
+      width: 50px;
+      height: 50px;
+      text-align: center; }
+      body .redes-container ul li .facebook:hover {
+        background: #3b5999; }
+      body .redes-container ul li .instagram:hover {
+        background: #e4405f; }
+      body .redes-container ul li a {
+        display: block;
+        padding: 0 10px;
+        background: #fff;
+        color: #000;
+        line-height: 50px;
+        box-shadow: 0 3px 5px 0px rgba(255, 255, 255, 0.637);
+        transition: .2s; }
+        body .redes-container ul li a:hover {
+          transform: translateY(-3px) scale(1.05);
+          box-shadow: 0 5px 5px 0px rgba(255, 255, 255, 0.637);
+          filter: none; }
+    body .redes-container * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box; }
