@@ -69,14 +69,14 @@
         <form action="enviar.php" method="post">
             <div class="row">
                 <div class="col">
-                  <input type="text" name="nombre" class="form-control" placeholder="Nombre" aria-label="Nombre"required>
+                  <input type="text" class="form-control" placeholder="Nombre" aria-label="Nombre"required>
                 </div>
                 <div class="col">
-                  <input type="text" name="apellido" class="form-control" placeholder="Apellido" aria-label="Apellido"required>
+                  <input type="text" class="form-control" placeholder="Apellido" aria-label="Apellido"required>
                 </div>
               </div>
               <div class="mb-3 margen">
-                <input type="email" name="email" class="form-control" id="exampleFormControlInput1" placeholder="Email"required>
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Email"required>
               </div>
               <select class="form-select" name="pais" aria-label="Default select example"required>
                 <option selected>Seleccione un país/región</option>
@@ -90,28 +90,28 @@
                 <option value="8">Venezuela</option>
               </select>
               <div class="col margen">
-                <input type="text" name="direccion-de-calle" class="form-control" placeholder="Dirección de la calle" aria-label="Dirección de la calle"required>
+                <input type="text" class="form-control" placeholder="Dirección de la calle" aria-label="Dirección de la calle"required>
               </div>
               <div class="col margen">
-                <input type="text" name="localidad" class="form-control" placeholder="Localidad / Ciudad" aria-label="Localidad / Ciudad"required>
+                <input type="text" class="form-control" placeholder="Localidad / Ciudad" aria-label="Localidad / Ciudad"required>
               </div>
               <div class="col margen">
-                <input type="text" name="provincia" class="form-control" placeholder="Provincia / Región" aria-label="Provincia / Región"required>
+                <input type="text" class="form-control" placeholder="Provincia / Región" aria-label="Provincia / Región"required>
               </div>
               <div class="col margen">
-                <input type="text" name="codigo-postal" class="form-control" placeholder="Código postal" aria-label="Código postal"required>
+                <input type="text" class="form-control" placeholder="Código postal" aria-label="Código postal"required>
               </div>
               <div class="col margen">
-                <input type="text" name="telefono" class="form-control" placeholder="Teléfono" aria-label="Teléfono"required>
+                <input type="text" class="form-control" placeholder="Teléfono" aria-label="Teléfono"required>
               </div>
               <div class="tittle-2">
                 <h2 id="title">Descripción de pedido</h2>
                 </div>
                 <div class="mb-3">
-                    <textarea class="form-control" name="especificaion-de-producto" id="exampleFormControlTextarea1" rows="3"placeholder="Nota sobre tu pepido, por ejemplo, nota de que producto en específico..."></textarea>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"placeholder="Nota sobre tu pepido, por ejemplo, nota de que producto en específico..."></textarea>
                   </div>
                   <div>
-                    <button type='submit' value="Enviar" id="submit" class="submit-button color">Enviar</button>
+                    <button type='submit' id="submit" class="submit-button color">Enviar</button>
                   </div>
         </form>
     </main>
